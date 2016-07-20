@@ -2,7 +2,7 @@ var cheerio = require('cheerio');
 var urlJoin = require('url-join');
 
 function convert(base_url, currentUrl) {
-  if (!currentUrl || /^(https?|file|ftps?|mailto|javascript|data:image\/[^;]{2,9};):/i.test(currentUrl)) {
+  if (!currentUrl || /^(https?|file|ftps?|mailto|javascript|\/?data):/i.test(currentUrl)) {
     return currentUrl;
   }
   return urlJoin(base_url, currentUrl);
