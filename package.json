@@ -1,6 +1,6 @@
 {
   "name": "rel-to-abs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert relative URLs to absolute URLs given an HTML source",
   "main": "index.js",
   "scripts": {
@@ -27,7 +27,7 @@
     "url": "https://github.com/auth0/rel-to-abs/issues"
   },
   "dependencies": {
-    "cheerio": "~0.20.0",
+    "cheerio": "~1.0.0-rc.2",
     "url-join": "0.0.1"
   }
 }
